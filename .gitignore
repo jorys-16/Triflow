@@ -192,3 +192,12 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# === Triflow project: encrypted data and keys ===
+data/*.enc
+data/key.key
+data/test_*.json.enc
+
+# Optional: Allow .gitkeep files to be tracked in data/ if used
+# This negation ensures .gitkeep is versioned to keep the empty data/ directory in git.
+!data/**/*.gitkeep
